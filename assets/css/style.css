@@ -45,8 +45,10 @@ h1{
     font-size: 6rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    color:rgb(255, 1, 1);
+    color:rgb(255, 255, 255);
     text-transform: uppercase;
+    text-shadow: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.15rem red;
 }
 
 h2{
@@ -63,6 +65,8 @@ span{
     font-family: 'Montserrat';
     font-size: 3.00rem;
     font-weight: 700;
+    color: #fff;
+    text-shadow: rgb(0, 0, 0);
 }
 
 
@@ -92,13 +96,14 @@ p{
 }
 
 .botao{
-    background: #1900ff;
-	color: white;
-	border-style: outset;
-	border-color: #1900ff;
-	height: 50px;
-	width: 100px;
-	text-shadow: none;
+ padding: 1.0rem 1.0rem;
+ background: rgb(17, 1, 255);
+ border-radius: 4rem;
+ font-family: (--font-heading);
+ font-size: 3.5rem;
+ color: #fff;
+ text-shadow: 0 0.2rem 0.2rem rgb(5, 5, 5);
+ text-decoration: none;
 }
 
 section{
