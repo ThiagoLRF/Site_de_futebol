@@ -178,5 +178,43 @@ color: #fff;
     position: absolute;
     bottom: 0%;
     opacity: 0;
-    transition: opacity .5s ease-in-out, bottom .5s;
+    transition: opacity 0.5s ease-in-out, bottom .8s;
+}
+
+#secao-orcamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #212121;
+}
+
+#secao-orcamento form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    row-gap: 1rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+#secao-orcamento output{
+    grid-column: 2;
+}
+
+#secao-orcamento h3{
+    position: absolute;
+    top: -10px;
+    background-color: #6A3093;
+    color: #fff;
+    
+}
+
+input[type=number]{
+    padding: .5rem;
+    background-color: #212121;
+    color: #fff;
+    border: none;
 }
