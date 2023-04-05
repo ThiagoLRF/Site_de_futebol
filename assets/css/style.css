@@ -142,7 +142,7 @@ section{
 }
 
 #secao-projetos{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: var(--collor-default);
 }
 
@@ -186,7 +186,7 @@ color: #fff;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #212121;
+    background-color: #464646;
 }
 
 #secao-orcamento form{
@@ -202,19 +202,29 @@ color: #fff;
 
 #secao-orcamento output{
     grid-column: 2;
+    font-size: 2.0rem;
 }
+
+#secao-orcamento label{
+   
+    font-size: 1.5rem;
+}
+
 
 #secao-orcamento h3{
     position: absolute;
     top: -10px;
-    background-color: #6A3093;
+    background-color: #202ab1;
     color: #fff;
+    font-size: 2.0rem;
+    
     
 }
 
 input[type=number]{
     padding: .5rem;
-    background-color: #212121;
+    background-color: #464646;
     color: #fff;
     border: none;
+    font-size: 1.5rem;
 }
