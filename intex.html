@@ -6,11 +6,49 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Portifolio</title>
       <link rel="stylesheet" href="./assets/css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
 
 <body>
+
+    <nav>
+        <div id="hamburguer">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
+
+        <ul id="menu">
+            <li>
+                <a href="#secao-home">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#secao-apresentacao">
+                    <i class="fa-solid fa-user"></i>
+                    Apresentação
+                </a>
+            </li>
+            <li>
+                <a href="#secao-projetos">
+                    <i class="fa-solid fa-code"></i>
+                    Projetos
+                </a>
+            </li>
+            <li>
+                <a href="#secao-orcamento">
+                    <i class="fa-solid fa-money-bill"></i>
+                    Orçamento
+                </a>
+            </li>
+        </ul>
+    </nav>
+
     
-    <header>
+    <header id="secao-home"> 
         <h1>Desenvolva suas habilidades</h1>
         <span>Thiago Leandro R. Felipe<br></span>
         <a href="#secao-apresentacao" class="botao">Saiba Mais</a>
@@ -66,23 +104,23 @@
         <form action="">
             <h3>Orçamento</h3>
 
-            <label for="qtde">Qtde de Páginas</label>
+            <label for="qtde">Qtde de Aulas</label>
             <input type="number" id="qtde" min="1" value="1">
 
-            <label for="js">Precisa de JS?</label>
+            <label for="js">Precisa de Treino Especifico?</label>
             <input type="checkbox" id="js">
 
-            <label for="layout">Precisa de Layout</label>
+            <label for="layout">Precisa Fazer Dois periodo</label>
             <div>
                 <input type="radio" id="layout_sim" name="layout">
-                <label for="">Sim, Preciso de Layout</label>
+                <label for="">Sim, Quero Mais Experiência</label>
 
                 <input type="radio" id="layout_nao" name="layout">
-                <label for="layout_nao">Não, já tenho</label>
+                <label for="layout_nao">Não, Eu tenho Experiência</label>
             </div>
 
-            <label for="prazo" id="label_prazo">Prazo</label>
-            <input type="range" id="prazo" min="1" max="10">
+            <label for="prazo" id="label_prazo">Horas Por Dia</label>
+            <input type="range" id="prazo" min="1" max="3">
 
             <output id="output">R$ 0,00</output>
         </form> 
@@ -90,6 +128,7 @@
     </section>
 
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/menu.js"></script>
 
     
 </body>
