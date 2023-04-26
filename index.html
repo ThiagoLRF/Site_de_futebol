@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futnews</title>
+    <link rel= "stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+    <body>
+
+        <nav>
+            <div id="hamburguer">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
+
+            <ul id="menu">
+                <li>
+                    <a href="#secao-home">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#secao-apresentacao">
+                        <i class="fa-solid fa-user"></i>
+                        Apresentação
+                    </a>
+                </li>
+                <li>
+                    <a href="#secao-projetos">
+                        <i class="fa-solid fa-code"></i>
+                        Projetos
+                    </a>
+                </li>
+                <li>
+                    <a href="#secao-orcamento">
+                        <i class="fa-solid fa-money-bill"></i>
+                        Orçamento
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    
+    <header id="secao-home"> 
+        <h1>Desenvolva suas habilidades</h1>
+        <span>Thiago Leandro R. Felipe<br></span>
+        <a href="#secao-apresentacao" class="botao">Saiba Mais</a>
+    </header>
+
+    <section id="secao-apresentacao">
+        <img class= 'avatar large-only' src="./assets/imagens/126630182.png" alt="Imagem github">
+        <div id="texto-apresentacao">
+            <h2>Profissionais de ponta, especializados e de alta confiança</h2>
+            <p>Thiago Leandro ex-jogador profissional além de todo<br> seu conhecimento futebolistico se epecializou <br>na área e aperfeiçoou seu conhecimento </p>
+            <h2>Ajudamos você a melhorar suas habilidades motoras e físicas</h2>
+            <p>Venha se juntar a esse time e tenha um desenvolvimento<br> pessoal e profissional no esporte que você ama</p>
+            <a href="#secao-projetos" class="botao">Nossos Projetos</a>
+        </div>
+    </section>    
+
+    <section id="secao-projetos">
+        <ul>
+            <li class="card">
+                <div class="card-image">
+                    <img src="./assets/imagens/thiagosite2.jpg" alt="">
+
+                </div>
+                <div class="card-info">
+                    <h4>Habilidades</h4>
+                    <h5>Motoras</h5>
+                    <p>Movimentos, Alongamentos, Fundamentos</p>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-image">
+                    <img src="./assets/imagens/thiagosite3.jpg" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Habilidades </h4>
+                    <h5>Física</h5>
+                    <p>Parte Tática, Treino com Bola, Sprints</p>
+                </div>
+            </li>
+            <li class="card">
+                <div class="card-image">
+                    <img src="./assets/imagens/thiagosite4.jpg" alt="">
+                </div>
+                <div class="card-info">
+                    <h4>Crescimento </h4>
+                    <h5>Pessoal</h5>
+                    <p>Parte Mental, Evolução Pessoal, Novas Habilidades</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="secao-orcamento">
+        <form action="">
+            <h3>Orçamento</h3>
+
+            <label for="qtde">Qtde de Aulas</label>
+            <input type="number" id="qtde" min="1" value="1">
+
+            <label for="js">Precisa de Treino Especifico?</label>
+            <input type="checkbox" id="js">
+
+            <label for="layout">Precisa Fazer Dois periodo</label>
+            <div>
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="">Sim, Quero Mais Experiência</label>
+
+                <input type="radio" id="layout_nao" name="layout">
+                <label for="layout_nao">Não, Eu tenho Experiência</label>
+            </div>
+
+            <label for="prazo" id="label_prazo">Horas Por Dia</label>
+            <input type="range" id="prazo" min="1" max="3">
+
+            <output id="output">R$ 0,00</output>
+        </form> 
+        
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/menu.js"></script>
+
+    
+</body>
+
+</html>
