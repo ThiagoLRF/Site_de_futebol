@@ -285,16 +285,24 @@ input[type=number]{
 }
 
 @media(max-width: 900px) {
-    #secao-projetos ul{
-      flex-direction: column;
-    
-    }
-    
-    .lager-only{
-        display: none;
-    }
-
-    #secao-orcamento form{
-        grid-template-columns: 1fr;
-    }
+    #secao-projetos{
+        height: auto;   
+       }
+       #secao-projetos ul {
+           flex-direction: column;
+       }    
+       .large-only{
+           display: none;
+       }
+       #secao-orcamento form{
+           grid-template-columns: 1fr;
+           width: 70%;
+       }
+       .card-image img{
+           height: 40rem;
+           width: 28rem;
+       }
+       nav ul {
+           width: 15rem;
+       }
 }
